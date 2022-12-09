@@ -1,0 +1,149 @@
+@font-face {
+   font-family: 'Wonderful moment';
+   src: url('./fuentes/Wonderful moment.otf') format('OpenType');
+   font-stretch: 110%;
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Nunito';
+   src: 
+      local('Nunito'), 
+      url('./fuentes/Nunito-VariableFont_wght.ttf') format('trueType');
+   font-stretch: normal;
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Anonymous Pro';
+   src: 
+      local('Anonymous Pro.ttf'), 
+      url('./fuentes/Anonymous Pro.ttf') format('trueType');
+   font-stretch: normal;
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Delius Swash Caps';
+   src: url('./fuentes/DeliusSwashCaps-Regular.ttf') format('trueType');
+   font-stretch: normal;
+   font-weight: normal;
+   font-style: normal;
+}
+
+:root{
+   --font_titles: 'Wonderful moment', 'Segoe Script';
+
+   --font_body:  'Nunito', 'Open Sans', sans-serif;
+   --font_anchors:  'Delius Swash Caps', 'Nunito', 'Open Sans', sans-serif;
+   --font_code:  'Anonymous Pro', 'Consolas', sans-serif;
+
+   --top: rgb(28, 60, 74);
+   --menu_font: RGB(255,255,255,0.5);
+   --menu_movil: RGB(75,101,135);
+   --menu_hover: #c8c6c6;
+
+   --enlaces: #003899;
+   
+   --toc: #f7f6f2;
+   --font_toc: #686464;   		
+   --bfont_toc: #658594;
+   --toc_title:#b4b1b1;
+   
+   --foot: #ecf0f2;
+   --font_content: #000;
+   --bg_sutil:#FDFBFB;
+   --fondo: #fff;
+   --visitado: #2a5b6f;
+   --content-hover: #99ff66;
+   --scrollbar: #c8c6c6;
+
+   --panel: #rgba(206, 221, 245, 1);
+
+}
+code,
+kbd,
+samp {
+	font-family: var(--font_code), monospace;
+	font-size: 1em;
+}
+strong {
+   color:black;
+   font-weight: lighter;
+}
+
+em {
+   font-family: var(--font_anchors);
+   font-style: normal;
+   color: var(--visitado);
+}
+
+h1, h2, h3 {
+   font-family: var(--font_titles);
+   font-weight: normal;
+   line-height: 1.3;
+   color: var(--menu_movil);
+}
+h1 {font-size: 3.3rem;}
+h2 {
+   font-size: 2.5rem; 
+   color: var(--top);
+}
+
+h3 {font-size: 1.5rem;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 0.8rem;}
+
+h4,
+h5,
+h6 {
+   font-family: var(--font_body);
+   color: var(--menu_movil);
+   line-height: 1.5;
+}
+
+a {
+   font-weight: 500;
+   text-decoration: none;
+   color: var(--enlaces);
+}
+
+
+a:hover {
+   color: blue;
+   font-weight: bolder;
+   cursor: pointer;
+}
+/*
+a[href*="http"]{
+   color:#f00;
+ }
+*/
+
+a[target] {
+   background: url('./fuentes/external-link-16.png') no-repeat 100% 60%;
+   background-size: 10px 10px;
+   padding-right:11px;
+ }
+
+ details {
+   font-size: 0.8rem;
+   display: block;
+   width: 90%;
+   margin-left: 2.5rem;
+   border: solid 1px var(--foot);
+ }
+ details > summary {
+   padding: 2px;
+   background-color: var(--foot);
+   cursor: pointer;
+ }
+ 
+ details > p {
+   background-color: var(--fondo);
+   padding: 2px 2em;
+   margin: 0;
+ }

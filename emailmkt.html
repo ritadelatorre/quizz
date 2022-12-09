@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./css/estilotest.css" rel="stylesheet">
+
+   <title>E-MAIL MARKETING</title>
+</head>
+
+<body>
+   <header>
+      <h1 id="titulo">Test e-Mail Marketing: Actividad en Mailchimp</h1>
+      <p>Número de preguntas: <strong><span id="num_preguntas">20</span></strong>
+         <button onclick="siguiente()"> siguiente </button>
+         <button onclick="mostrarPuntos()"> verificar </button>
+         <!-- <button onclick="resultado()"> resultado </button> -->
+         <button onclick="location.reload(true)"> reiniciar test </button> <!-- recarga la pagina -->
+      </p>
+   </header>
+   <div id="contenido">
+      <div id="container">
+         <section id="pregunta">
+            <p>1. La fórmula ... <b>=SUMA(A1; B5:B8)</b></p>
+            <ol type="a">
+               <li>
+                  <input id="opA" name="respuesta" type="radio" value="1" />
+                  <span>Suma el valor de A1 con los del rango B5:B8</span>
+               </li>
+               <li>
+                  <input id="opB" name="respuesta" type="radio" value="0" />
+                  <span>Suma A1 + B5 + B8</span>
+               </li>
+               <li>
+                  <input id="opC" name="respuesta" type="radio" value="0" />
+                  <span>Suma A1 al resultado de la división de B5 entre B8</span>
+               </li>
+               <li>
+                  <input id="opD" name="respuesta" type="radio" value="0" />
+                  <span>La sintaxis de la fórmula mostrada es incorrecta</span>
+               </li>
+            </ol>
+         </section>
+         
+         <section class ="ok" id="correcta" style="display:none">
+            <p>Respuesta correcta: <strong>a</strong>.</p>
+         </section>
+         <section class ="pto" id="puntos" style="display:none">
+            <p>Puntos: <span id="ptos">1</span>/1;</p>
+         </section>
+
+      </div><!-- de la pregunta -->
+   </div>
+
+   <div id="interpreta" style="display: none;">
+      <p id="totalTest"></p>
+   </div>
+
+   <script src="./js/preguntas.js"></script>
+   <script defer src="./js/emailmkt.js"></script>
+   <script defer src="./js/corrige.js"></script>
+</body>
+
+</html>

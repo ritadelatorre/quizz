@@ -132,7 +132,7 @@ const preguntas = [
          11, 
          "radio", 
          "¿A qué se refiere la opción Field Tag del Formulario de Suscripción?", 
-         "Verdadero", 
+         "/img/emailmkt/P11.png", 
          "A una etiqueta que se le aplica al campo", 0, 
          "Al nombre que tiene un campo en la lista de suscriptores", 1, 
          "Al nombre del campo en el idioma original del Mailchimp que es inglés.", 0, 

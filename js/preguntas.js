@@ -38,6 +38,10 @@ class Pregunta {
       mostrar +="<p>" + this.id + ". ";
       mostrar += this.pregunta +"</p>";
 
+      if (this.imagen != "-") {
+         mostrar += "<p><img src='." + this.imagen + "'/></p>"
+      }
+
       mostrar += "<ol type='a'>";
 
       mostrar += "<li><input id='opA' name='respuesta' type='" + this.tipo + "'";
